@@ -1,6 +1,6 @@
 plugins {
-    id("com.android.library.agp.8.5.0")
-    id("org.jetbrains.kotlin.android.8.5.0")
+    alias(libs.plugins.android.library)
+    alias(libs.plugins.jetbrains.kotlin.android)
     id("maven-publish")
 }
 
@@ -53,7 +53,7 @@ afterEvaluate {
             create<MavenPublication>("release") {
                 from(components["release"])
                 groupId = "com.github.Shibler0"
-                artifactId = "DiagonalNavigationCompose"
+                artifactId = "TransitionLayer"
                 version = "1.0"
             }
         }
