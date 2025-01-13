@@ -50,6 +50,12 @@ dependencies {
 afterEvaluate {
     publishing {
         publications {
+            create<MavenPublication>("release") {
+                from(components["release"])
+                groupId = "com.github.Shibler0"
+                artifactId = "DiagonalNavigationCompose"
+                version = "1.0"
+            }
         }
     }
 }
