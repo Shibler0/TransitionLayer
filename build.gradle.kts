@@ -40,11 +40,11 @@ android {
 }
 
 dependencies {
-    implementation(platform(libs.androidx.compose.bom))
-    implementation(libs.androidx.ui)
-    implementation(libs.androidx.ui.graphics)
-    implementation(libs.androidx.material3)
-    implementation(libs.androidx.navigation.compose)
+    implementation(platform("androidx.compose:compose-bom:2024.12.01")) // Remplacez par la version souhaitée
+    implementation("androidx.compose.ui:ui:1.7.6") // Remplacez par la version souhaitée
+    implementation("androidx.compose.ui:ui-graphics:1.7.6") // Remplacez par la version souhaitée
+    implementation("androidx.compose.material3:material3:1.3.1") // Remplacez par la version souhaitée
+    implementation("androidx.navigation:navigation-compose:2.8.5")
 }
 
 afterEvaluate {
